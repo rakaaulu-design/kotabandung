@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+    border: none;
+}
+
+
+header {
+    background-image: url("Kawah_putih.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+header h1 {
+    font-family: georgia, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+    -webkit-text-stroke: 1.5px #010910;
+    text-shadow: 3px 3px 5px rgb(4, 2, 14);
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    font-style: italic;
+    -webkit-text-stroke: 1.5px #f7fafc;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+nav {
+    background-color: #466380;
+    display: flex;
+    justify-content: center;
+}
+
+nav label {
+    color: white;
+    padding: 17px 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav label:hover {
+    background-color: #f1c40f;
+    color: #467187;
+}
+
+#main {
+    display: flex;
+    min-height: 500px;
+}
+
+aside {
+    width: 230px;
+    background-color: #34495e;
+    padding: 20px 12px;
+    flex-shrink: 0;
+}
+
+aside h3 {
+    color: #d8cfaa;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside label {
+    display: block;
+    padding: 12px;
+    background-color: #40566d;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+aside label:hover {
+    background-color: #f1c40f;
+    color: #263238;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    min-width: 0;
+}
+
+.menu-radio {
+    display: none;
+}
+
+.panel {
+    display: none;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.8;
+    min-height: 350px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.panel h2 {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 23px;
+}
+
+.panel h3 {
+    margin-bottom: 12px;
+}
+
+.panel p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.panel ul {
+    padding-left: 25px;
+}
+
+.panel li {
+    margin-bottom: 10px;
+}
+
+#beranda {
+    background-color: #eaf3ff;
+    color: #000000;
+    border: 3px solid #000000;
+}
+
+#beranda h2 {
+    background-color: #004687;
+    color: rgb(255, 255, 255);
+}
+
+#sejarah {
+    background-color: #fff0dc;
+    color: #000000;
+    border: 3px solid #020201;
+}
+
+#sejarah h2 {
+    background-color: #b87945;
+    color: white;
+}
+
+#tentang {
+    background-color: #fcebf2;
+    color: #000000;
+    border: 3px solid #000000;
+}
+
+#tentang h2 {
+    background-color: #0f120f;
+    color: white;
+}
+
+#wisata {
+    background-color: #09ff00;
+    color: #0f0f0f;
+    border: 3px solid #0d0c0d;
+}
+
+#wisata h2 {
+    background-color: #040009;
+    color: rgb(252, 252, 252);
+}
+
+#kuliner {
+    background-color: #fff0e3;
+    color: #754323;
+    border: 3px solid #df8745;
+}
+
+#kuliner h2 {
+    background-color: #df8745;
+    color: white;
+}
+
+#oleh {
+    background-color: #e1f6f4;
+    color: #245b58;
+    border: 3px solid #48a6a0;
+}
+
+#oleh h2 {
+    background-color: #48a6a0;
+    color: white;
+}
+
+#r-beranda:checked ~ #main #beranda,
+#r-sejarah:checked ~ #main #sejarah,
+#r-galeri:checked ~ #main #galeri {
+    display: block;
+}
+#r-tentang:checked ~ #main #tentang,
+#r-wisata:checked ~ #main #wisata,
+#r-kuliner:checked ~ #main #kuliner,
+#r-oleh:checked ~ #main #oleh {
+    display: block;
+}
+
+.panel table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.panel td {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 12px;
+}
+
+.panel tr:hover {
+    background-color: rgba(255,255,255,0.7);
+}
+
+footer {
+    background-color: #263b50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #f1c40f;
+}
+
+@media screen and (max-width: 650px) {
+
+    #wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav label {
+        padding: 14px 12px;
+        font-size: 12px;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    aside ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    aside li {
+        margin: 0;
+        flex: 1 1 45%;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+
+    .panel h2 {
+        font-size: 19px;
+    }
+}
